@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#nav ul li {cursor: pointer;color:blue}
+div {
+  font-size: 15px;
+}
+</style>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Backbone Router App</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="/css/normalize.min.css"/>
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/styles.css"/>
+
+        <script src="/js/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <ul>
+                <li data-url="albums">Albums</li>
+                <li data-url="artists">Artists</li>
+                <li data-url="genres">Genres</li>
+            </ul>
+        </nav>
+        <div id="container">
+
+        </div>
+        <script src="/js/lib/jquery-min.js"></script>
+        <script src="/js/lib/underscore-min.js"></script>
+        <script src="/js/lib/backbone-min.js"></script>
+        <script src="/js/routerApp/App.js"></script>
+    </body>
+</html>

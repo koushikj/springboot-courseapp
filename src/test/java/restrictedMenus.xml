@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<navigation xmlns="http://xmp.cisco.com/wap/schemas/ui">
+    <extensionId>com.cisco.wap.web.Navigation</extensionId>
+    <navigationMenubarItem>
+        <id>pulloutLandingPage</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Pullout Landing Page</label>
+        <image>mm_home</image>
+        <type>GROUP</type>
+        <actionParams>
+            <hiddenPage>true</hiddenPage>
+            <pageId>page_pullout_landing</pageId>
+        </actionParams>
+    </navigationMenubarItem>
+    <navigationMenubarItem>
+        <id>reportDetails</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Report Details</label>
+        <image>mm_home</image>
+        <type>GROUP</type>
+        <actionParams>
+            <hiddenPage>true</hiddenPage>
+            <hideTopMenu>true</hideTopMenu>
+            <pageId>page_reports_details</pageId>
+        </actionParams>
+    </navigationMenubarItem>
+</navigation>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<navigation xmlns="http://xmp.cisco.com/wap/schemas/ui">
+    <extensionId>com.cisco.wap.web.Navigation</extensionId>
+    <navigationMenubarItem>
+        <id>administration</id>
+        <label>cpm_administration</label>
+        <megamenuConnectsContextLevel>true</megamenuConnectsContextLevel>
+        <columns>0</columns>
+        <type>GROUP</type>
+    </navigationMenubarItem>
+    <navigationMenubarItem>
+        <id>pulloutLandingPage</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Pullout Landing Page</label>
+        <image>mm_home</image>
+        <type>GROUP</type>
+        <actionParams>
+            <hiddenPage>true</hiddenPage>
+            <pageId>page_pullout_landing</pageId>
+        </actionParams>
+    </navigationMenubarItem>
+    <navigationMenubarItem>
+        <id>reportDetails</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Report Details</label>
+        <image>mm_home</image>
+        <type>GROUP</type>
+        <actionParams>
+            <hiddenPage>true</hiddenPage>
+            <hideTopMenu>true</hideTopMenu>
+            <pageId>page_reports_details</pageId>
+        </actionParams>
+    </navigationMenubarItem>
+    <navigationItem>
+        <id>administration_system</id>
+        <image>mm_system</image>
+        <label>System</label>
+        <taskMenuPath>administration</taskMenuPath>
+        <type>GROUP</type>
+    </navigationItem>
+    <navigationItem>
+        <id>administration_system_time</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>System Time</label>
+        <taskMenuPath>administration/administration_system</taskMenuPath>
+        <actionParams>
+            <pageId>com_cisco_xmp_web_page_admin_system_time</pageId>
+        </actionParams>
+    </navigationItem>
+    <navigationItem>
+        <id>administration_session_info</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Session Info</label>
+        <taskMenuPath>administration/administration_system</taskMenuPath>
+        <actionParams>
+            <pageId>com_cisco_xmp_web_page_session_info</pageId>
+        </actionParams>
+    </navigationItem>
+    <navigationItem>
+        <id>server_cert</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Server Certificate</label>
+        <taskMenuPath>administration/administration_system</taskMenuPath>
+        <actionParams>
+            <pageId>com_cisco_xmp_web_page_admin_server_cert</pageId>
+        </actionParams>
+    </navigationItem>
+    <navigationItem>
+        <id>outstandingSigningRequests</id>
+        <handler>wap.application.action.OpenPageActionHandler</handler>
+        <label>Certificate Signing Requests</label>
+        <taskMenuPath>administration/administration_system</taskMenuPath>
+        <actionParams>
+            <pageId>com_cisco_xmp_web_page_admin_outstanding_signings</pageId>
+        </actionParams>
+    </navigationItem>
+</navigation>
